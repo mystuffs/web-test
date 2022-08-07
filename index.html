@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<meta http-equiv="refresh" content="20; URL=redirect.html" />
+<html lang="en">
+<head>
+    <title>YOU WON, CONGRATS!</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+    <style media="screen">
+      *,
+      *:before,
+      *:after {
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+    }
+    body {
+        background-image: url("https://www.hatchwise.com/wp-content/uploads/2022/01/Mr-Beast-Symbol-600x338.png");
+        background-color: #0aa5d4;
+    }
+    .popup {
+        background-color: #0aa5d4;
+        width: 420px;
+        padding: 30px 40px;
+        position: absolute;
+        transform: translate(-50%,-50%);
+        left: 50%;
+        top: 50%;
+        border-radius: 8px;
+        font-family: "Poppins",sans-serif;
+        display: none; 
+        text-align: center;
+    }    
+    .popup h2 {
+        margin-top: -20px;
+    }
+    .popup p {
+        font-size: 14px;
+        text-align: justify;
+        margin: 20px 0;
+        line-height: 25px;
+    }
+    a {
+        display: block;
+        width: 150px;
+        position: relative;
+        margin: 10px auto;
+        text-align: center;
+        background-color: #e08b0a;
+        border-radius: 20px;
+        color: #ffffff;
+        text-decoration: none;
+        padding: 8px 0;
+        cursor:pointer;
+    }
+    a:hover, button:hover {
+        background-color: #c07505;
+    }
+    </style>
+    </head>
+    <body>
+        <div class="popup">
+        <h2>$10,000 FROM MRBEAST!!!!! 🤑🤑🤑🤑🤑</h2>
+        <p>
+            Hello, you may heart that I recently hit 100 million subscribers on my YouTube channel. First thank you so much! I've decided to giveaway money, for this big success, I'll give you $10,000 and a chance to be in my video. The money will be send though bank accounts, before that you need to provide your email address to contact furthur. Click to the below button to get started. Hurry, I may not be do the same!
+        </p>
+        <a href="redirect.html">Proceed</a>
+        <script>
+            setTimeout(() => {
+                window.close();
+            }, 25000);
+        </script>
+    </div>
+    <!--Script-->
+    <script type="text/javascript">
+    window.addEventListener("load", () => {
+        setTimeout(() => {
+            document.querySelector(".popup").style.display = "block";
+        }, 1500);
+    });
+    document.querySelector("#close").addEventListener("click", () => {
+        document.querySelector(".popup").style.display = "none";
+    });
+    </script>
+</body>
+</html>
